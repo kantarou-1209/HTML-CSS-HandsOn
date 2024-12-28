@@ -1,29 +1,73 @@
 <!DOCTYPE html>
 <html lang="ja">
-
+ 
 <head>
   <meta charset="utf-8" />
   <title>自己紹介</title>
   <meta name="description" content="自己紹介サイトです。" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSSファイルの適用 -->
-  
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <div class="page-wrapper">
     <!-- ヘッダー -->
+     <header class="header">
+      <img src="img/logo.png" alt="logo" class="header-logo" />
+      <nav>
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#articles">Ariticles</a></li>
+        </ul>
+      </nav>
+     </header>
 
     <main class="main-content">
       <!-- メインビジュアル -->
-
+       <img src="img/main_visual.jpg" alt="メインビジュアル" class="main-visual" />
       <!-- プロフィール セクション -->
+      <section class="section" id="profile">
+        <h2 class="section-title">Profile</h2>
+        <div class="profile">
+          <img src="img/profile.png" alt="profile" class="profile-image" />
+          <div class="profile-info">
+            <h3>KANTA KOBAYASHI</h3>
+            <p>
+              出身: 東京都<br />
+              趣味: 野球、ゴルフ、IT<br />
+              技術: VBA、AWS、GCP、RPA開発、iPaas<br />
+              主な仕事: マネジメント、SaaSツール導入伴走支援<br />
+            </p>
+          </div>
+        </div>
+      </section> 
 
+    
       <!-- 記事 セクション -->
-
-    </main>
+       <section class="section" id="articles">
+        <h2 class="section-title">Articles</h2>
+        <div class="articles">
+          <img src="img/article.jpg" alt="記事サムネイル" class="article-image" />
+          <h3>記事タイトル</h3>
+          <p>記事内容</p>
+        </div>
+        <div class="articles">
+          <img src="img/article.jpg" alt="記事サムネイル" class="article-image" />
+          <h3>記事タイトル</h3>
+          <p>記事内容</p>
+        </div>
+        <div class="articles">
+          <img src="img/article.jpg" alt="記事サムネイル" class="article-image" />
+          <h3>記事タイトル</h3>
+          <p>記事内容</p>
+        </div>
+       </section>
 
     <!-- フッター -->
+     <footer class="footer">
+      <p>&copy; 2025 Profile</p>
+     </footer>
 
   </div>
 </body>
